@@ -51,7 +51,7 @@ with open('input') as file:
 
 print('Solution part one:', max(ids))
 
-# Id is in the list, the one after id is not but the third one is, id+1 is the missing one in the gap.
+# id+1 is the missing one in the gap.
 for id in ids:
     if id+1 not in ids and id+2 in ids:
         missing = id+1
